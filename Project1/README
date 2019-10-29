@@ -1,0 +1,66 @@
+**************************************************************
+# 	Author:	   Amarilda Dyrmishi
+#	Due Date:  10/27/2019
+#	Class:	   CS4280 - Compilers
+#	Prof:	   Dr. Climer
+#	Project 1
+**************************************************************
+#	#2 FSA Table + Driver
+**************************************************************
+
+Project Descripton
+
+Implement scanner for the provided lexical definitions
+	• The scanner is embedded and thus it will return one token every time it is called by a parser o Since the parser is not available yet, we will use a tester program 
+	For testing purposes, the scanner will be tested using a testing driver implemented in file with basename "testScanner".  
+	o You need to implement your own tester and include as a part of the project.  
+	o The tester will ask for one token at a time and display the token to the screen one per line, 
+***************************************************************
+
+Program output: 
+	• Properly handles merged tokens (with no white space)
+	o Includes recognizing keywords correctly 
+	o Includes proper printout of one token per line and token type, token value, and line number   
+	o Includes printing EOFTk 
+	 
+****************************************************************
+
+Invocation:  
+	• scanner            // read from the keyboard until simulated keyboard EOF (simulated EOF = CTRL^D)
+	• scanner < filename // same as above except redirecting from filename instead of keyboard 
+	• scanner filename   // reads from filename 
+
+
+*****************************************************************
+To run the code:
+make clean    //in case executable and .o files are not cleaned
+make scanner  // to create executable scanner
+
+Than test each case
+1-  ./scanner
+2-  ./scanner [filename]
+3-  ./scanner < [filename]
+
+*****************************************************************
+Test cases:
+1- Empty file         
+	print only EOF_tk
+2- File that does not exists
+	displayes Error message
+3- File with one token only
+	displays token information
+4- File with tokens separated by space
+	displays all tokens
+5- Change file 4 with tokens that are or not separated with white space
+	differences between tokens that are merged eg: if(x1+x2==0)
+6- File with identifiers starting with capital letters or less than 2 chars
+	displays error message
+7- File with a opening comment but not a clossing one
+	Throws an error while being processed by filter1
+*********************************************************************
+
+NOTE: If an error if found ERR_1 and ERR_2 (identifier starting with capital
+      eg: Number, or identifier less than 2 char eg: x)
+      program is set up to through an error and terminate, it will not parse 
+      the rest of the file
+
