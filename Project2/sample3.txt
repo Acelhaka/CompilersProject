@@ -1,0 +1,7 @@
+program
+var id1 .
+var id2 .
+begin
+var id3 .
+%#%
+end

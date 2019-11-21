@@ -1,0 +1,10 @@
+program
+var id1 .
+var id2 .
+begin
+var id3 .
+repeat [ id1 : 14 ]
+%repeat [ 3 < 14 ]%
+write id3 , ,
+# 
+end

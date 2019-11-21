@@ -1,0 +1,5 @@
+program
+begin
+if [ id2 : & 3 ] scan id3 , ,
+#
+end

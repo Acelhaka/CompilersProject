@@ -1,0 +1,58 @@
+**************************************************************
+# 	Author:	   Amarilda Dyrmishi
+#	Due Date:  10/17/2019
+#	Class:	   CS4280 - Compilers
+#	Prof:	   Dr. Climer
+#	Project 2
+**************************************************************
+
+Project Descripton
+
+Implement parser and tree builder for the provided grammar 
+	• Verify the project grammar is LL(1) or rewrite as needed in an equivalent form. 
+	• Have your parser generate error (line number and tokens involved) or print OK message upon successful parse. 
+	• Use your scanner module and fix if needed.  
+	• Project P2 will be tested assuming white spaces separate all tokens. 
+***************************************************************
+
+Program output: 
+	• Will display each line tokens belonging to the node,
+	  along with the node depth and the label of the node
+	  Each line will be shifted two spaces depending on the depth
+	 
+****************************************************************
+
+Invocation:  
+	• frontEnd            // read from the keyboard until simulated keyboard EOF (simulated EOF = CTRL^D)
+	• frontEnd < filename // same as above except redirecting from filename instead of keyboard 
+	• frontEnd filename   // reads from filename 
+
+
+*****************************************************************
+To run the code:
+make clean     //in case executable and .o files are not cleaned
+make frontEnd  // to create executable frontEnd
+
+Than test each case
+1-  ./frontEnd
+2-  ./frontEnd [filename]
+3-  ./frontEnd < [filename]
+
+*****************************************************************
+Test cases:
+1- Empty file         
+	print file is empty and terminates
+2- File that does not exists
+	displayes Error message
+3- File with basic grammar
+	displays the token in preorder
+4- File with nested statements	
+5- File with variables in various blocks
+6- Files with statements with different operators
+7- File with a opening comment but not a clossing one
+	Throws an error while being processed by filter1
+8- File with comments
+9- File with errors in the grammar
+*********************************************************************
+
+

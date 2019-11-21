@@ -1,0 +1,6 @@
+program
+var id1 .
+begin
+scan 3 ,
+#
+end

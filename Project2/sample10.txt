@@ -1,0 +1,9 @@
+program
+var id1 .
+var id2 .
+var id .
+begin
+let id1 : & id2 * 3
+,
+#
+end

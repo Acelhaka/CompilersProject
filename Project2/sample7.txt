@@ -1,0 +1,10 @@
+program
+var id1 .
+var id2 .
+begin
+scan id1 ,
+#
+repeat [ id1 > 3 ] 
+let id3 : 4 ,
+#
+end

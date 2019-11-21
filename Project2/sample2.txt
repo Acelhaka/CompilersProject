@@ -1,0 +1,5 @@
+program
+begin
+var id1 .
+var id2 .
+end 
