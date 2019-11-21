@@ -1,0 +1,44 @@
+**************************************************************
+# 	Author:	   Amarilda Dyrmishi
+#	Due Date:  9/22/2019
+#	Class:	   CS4280 - Compilers
+#	Prof:	   Dr. Climer
+#	Project 0
+
+***************************************************************
+Project Descripton
+Program will read in data and put them into a binary search tree (BST) with respect to the first character of the string.  
+• Each node in the tree will contain:
+	o The leading character o Two child nodes (left and right) 
+	o A list of the strings already seen that begin with the same character as the node’s character 
+• Tree is never balanced nor restructured other than growing new nodes 
+
+
+***************************************************************
+Program output: 
+	• Program will output three files named filename.levelorder, filename.preorder, and filename.inorder 
+	o The first half of the filename must match the input filename or ‘out’ for keyboard entry (for P0 usage or P0 < filename usage) 
+	• Output files will have one node per line, in the order of the traversal 
+	o Each line will be indented by 2 x the depth of the node (in number of blank spaces) 
+	o Each line will start with level number, followed by leading character, followed by a list of the strings seen that begin with the leading character in the order in which they appeared (each of the printed strings need to be separated by a single space) 
+
+****************************************************************
+
+Invocation:  
+P0 [filename] where filename is an optional argument. 
+	If a file name is given, the program will read from the file.
+	Otherwise it will read from the keyboard until simulated keyboard EOF.  
+	• P0       // read from the keyboard until simulated keyboard EOF 
+	• P0 < filename // same as above except redirecting from filename instead of keyboard 
+	• P0 filename // reads from filename 
+
+
+*****************************************************************
+To run the code:
+make clean   //in case executable and .o files are not cleaned
+make p0	     // to create executable p0
+
+Than test each case
+1-  ./p0
+2-  ./p0 [filename]
+3-  ./p0 < [filename]
