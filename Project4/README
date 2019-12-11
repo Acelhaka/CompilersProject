@@ -1,0 +1,44 @@
+**************************************************************
+# 	Author:	   Amarilda Dyrmishi
+#	Due Date:  12/9/2019
+#	Class:	   CS4280 - Compilers
+#	Prof:	   Dr. Climer
+#	Project 4
+**************************************************************
+
+Project Description
+	• Generate assembly code for an input program written in our course grammar. 
+	• The program is to parse the input, generate a parse tree, perform static semantics, and then generate a target file.  
+	• Any error should display detailed message, including line number if available (depending on scanner). 
+	• The target name should be o kb.asm if keyboard input o file.asm if file input. 
+	  The base name matches that of the input file, that is if input basename is t2 then output should be t2.asm 
+	• Upon success, only display the name of the target file generated and no other output.  
+	• Upon error and the error message, no other display should be generated and no target should be generated
+	 
+****************************************************************
+
+Invocation:  
+	• compile            // read from the keyboard until simulated keyboard EOF (simulated EOF = CTRL^D)
+	• compile < filename // same as above except redirecting from filename instead of keyboard 
+	• compile filename   // reads from filename 
+
+
+*****************************************************************
+To run the code:
+make clean     //in case executable and .o files are not cleaned
+make compile   // to create executable frontEnd
+
+Than test each case
+1-  ./compile 
+2-  ./compile [filename]
+3-  ./compile < [filename]
+
+*****************************************************************
+Test cases:
+1- Empty file         
+2- File that contains if conditions
+3- File that contains loops, repeat
+4- File that contains combination of both
+*********************************************************************
+
+
